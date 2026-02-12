@@ -5,7 +5,7 @@ const APPS = [
     desc: "Premi il pulsante, animazione LED suspense e il servo ruota in base al risultato.",
     tags: ["SERVO", "LED", "GAME"],
     requires: "UNO Q, LED, Servo, Pulsante",
-    zip: "apps/roulette-servo/app.zip",
+    zip: "https://raw.githubusercontent.com/gerry-tech/gerry-uno-q-apps/main/apps/roulette-servo/app.zip",
     demo: "",
     thumbText: "Roulette"
   }
