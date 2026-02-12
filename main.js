@@ -24,7 +24,7 @@ function render(apps) {
         <div class="tags">${tags}</div>
         <p class="meta">${req}</p>
         <div class="btns">
-          <a class="btn primary" href="${a.zip}" download>Download ZIP</a>
+          <a class="btn primary" href="${a.zip}" target="_blank" rel="noreferrer">Download ZIP</a>
           ${a.demo ? `<a class="btn" href="${a.demo}" target="_blank" rel="noreferrer">Demo</a>` : ""}
         </div>
       </div>
