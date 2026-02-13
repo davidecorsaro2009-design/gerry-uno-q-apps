@@ -50,6 +50,9 @@ function setupFilters(allApps) {
   const q = document.getElementById("q");
   const tag = document.getElementById("tag");
 
+  // reset dropdown (se ricarichi)
+  tag.innerHTML = `<option value="">Tutti i tag</option>`;
+
   const allTags = uniq(allApps.flatMap(a => a.tags || []));
 
   for (const t of allTags) {
@@ -79,4 +82,8 @@ function setupFilters(allApps) {
   apply();
 }
 
-setupFilters(APPS);
+if (typeof APPS === "undefined") {
+  console.error("APPS non è definito: controlla apps/apps.js e il path nello script.");
+} else {
+  setupFilters(APPS);
+}
