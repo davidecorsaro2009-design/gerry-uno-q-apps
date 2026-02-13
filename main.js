@@ -1,5 +1,5 @@
 function uniq(arr) {
-  return [...new Set(arr)].sort((a,b)=>a.localeCompare(b));
+  return [...new Set(arr)].sort((a, b) => a.localeCompare(b));
 }
 
 function render(apps) {
@@ -7,7 +7,7 @@ function render(apps) {
   grid.innerHTML = "";
 
   if (!apps.length) {
-    grid.innerHTML = `<p>Nessuna app trovata.</p>`;
+    grid.innerHTML = `<p class="empty">Nessuna app trovata.</p>`;
     return;
   }
 
@@ -15,26 +15,24 @@ function render(apps) {
     const el = document.createElement("div");
     el.className = "card";
 
+    const badge = a.badge ? `<div class="badge">${a.badge}</div>` : "";
     const tags = (a.tags || []).map(t => `<span class="tag">${t}</span>`).join("");
     const req = a.requires ? `Componenti: ${a.requires}` : "";
 
-    // ✅ BADGE FIXATO (fuori dal template string)
-    const badge = a.badge ? `<div class="badge">${a.badge}</div>` : "";
+    const thumb = a.preview
+      ? `<img src="${a.preview}" alt="Preview ${a.title}" loading="lazy">`
+      : `<span>${a.thumbText || "Preview"}</span>`;
 
     el.innerHTML = `
       ${badge}
-
-      <div class="thumb">
-        ${a.preview
-          ? `<img src="${a.preview}" alt="Preview ${a.title}" loading="lazy">`
-          : `<span>${a.thumbText || "Preview"}</span>`
-        }
-      </div>
+      <div class="thumb">${thumb}</div>
 
       <div class="content">
-        <h3>${a.title}</h3>
+        <h3 title="${a.title}">${a.title}</h3>
         <p class="meta">${a.desc || ""}</p>
+
         <div class="tags">${tags}</div>
+
         <p class="meta">${req}</p>
 
         <div class="btns">
@@ -66,11 +64,9 @@ function setupFilters(allApps) {
     const t = tag.value;
 
     const filtered = allApps.filter(a => {
-      const hay = `${a.title} ${a.desc || ""} ${(a.tags||[]).join(" ")} ${a.requires||""}`.toLowerCase();
-
+      const hay = `${a.title} ${a.desc || ""} ${(a.tags || []).join(" ")} ${a.requires || ""}`.toLowerCase();
       const okQ = !query || hay.includes(query);
       const okT = !t || (a.tags || []).includes(t);
-
       return okQ && okT;
     });
 
