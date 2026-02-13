@@ -16,9 +16,9 @@ const APPS = [
     desc: "Crea una pagina WEB dove comandiamo il display (UNO Q)",
     tags: ["WEB", "DISPLAY", "EASY"],
     requires: "UNO Q, Display a 7 segmenti, (opz) alimentazione esterna",
-    zip: "https://raw.githubusercontent.com/gerry-tech/gerry-uno-q-apps/main/apps/web-servo-control/app.zip",
-    preview: "apps/web-servo-control/preview.jpg",
-    thumbText: "Roulette"
+    zip: "https://github.com/gerry-tech/gerry-uno-q-apps/raw/refs/heads/main/apps/display-a-7-segmenti/Display%20a%207%20segmenti.zip",
+    preview: "apps/dispay-a-7-segmenti/preview.jpg",
+    thumbText: "Display a 7 Segmenti"
   }
 ];
 
