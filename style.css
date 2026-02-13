@@ -111,3 +111,15 @@ a.btn.primary {
 .channel-info h2{ margin: 0 0 6px; font-size: 18px; }
 .channel-info p{ margin: 0 0 10px; color: var(--muted); }
 .channel-cta{ display:flex; gap:10px; flex-wrap:wrap; }
+
+.controls select {
+  background: rgba(255,255,255,0.08);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+/* Fix menu a tendina (options) */
+.controls select option {
+  background: #0b1020;   /* stesso del bg */
+  color: rgba(255,255,255,0.92);
+}
