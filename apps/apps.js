@@ -7,6 +7,7 @@ const APPS = [
     requires: "UNO Q, LED, Servo, Pulsante",
     zip: "https://raw.githubusercontent.com/gerry-tech/gerry-uno-q-apps/main/apps/roulette-servo/Roulette.zip",
     demo: "",
+    badge: "FEATURED",
     thumbText: "Roulette"
   }
   ,
@@ -18,6 +19,7 @@ const APPS = [
     requires: "UNO Q, Display a 7 segmenti, (opz) alimentazione esterna",
     zip: "https://github.com/gerry-tech/gerry-uno-q-apps/raw/refs/heads/main/apps/display-a-7-segmenti/Display%20a%207%20segmenti.zip",
     preview: "/gerry-uno-q-apps/apps/display-a-7-segmenti/preview.jpeg",
+    badge: "NEW",
     thumbText: "Display a 7 Segmenti"
   }
 ];
