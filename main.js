@@ -17,6 +17,7 @@ function render(apps) {
     const req = a.requires ? `Componenti: ${a.requires}` : "";
 
     el.innerHTML = `
+      const badge = a.badge ? `<div class="badge">${a.badge}</div>` : "";
       <div class="thumb">
   ${a.preview
     ? `<img src="${a.preview}" alt="Preview ${a.title}" loading="lazy">`
