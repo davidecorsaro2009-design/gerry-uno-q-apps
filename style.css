@@ -160,33 +160,26 @@ a.btn.primary {
   box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 
-.thumb {
-  position: relative;
+.card h3 {
+  background: linear-gradient(90deg, #8a5cff, #3bd1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(80,140,255,0.25);
 }
 
-/* overlay scuro */
-.thumb::after {
-  content:"";
-  position:absolute;
-  inset:0;
-  background: linear-gradient(
-  180deg,
-  rgba(0,0,0,0.05) 0%,
-  rgba(0,0,0,0.30) 35%,
-  rgba(0,0,0,0.85) 100%
-  );
-  pointer-events:none;
-  z-index: 1;   /* sotto il testo */
+.meta {
+  color: rgba(255,255,255,0.85);
 }
 
-/* immagine */
-.thumb img {
-  position: relative;
-  z-index: 0;
+.tag {
+  background: linear-gradient(90deg, #7b5cff, #2fd0ff);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  box-shadow: 0 0 10px rgba(80,140,255,0.25);
 }
 
-/* contenuto sopra overlay */
-.card .content {
-  position: relative;
-  z-index: 2;
-}
