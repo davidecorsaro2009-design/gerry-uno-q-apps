@@ -88,3 +88,17 @@ if (typeof APPS === "undefined") {
 } else {
   setupFilters(APPS);
 }
+
+// Card click -> download ZIP (senza rompere i bottoni)
+document.addEventListener("click", (e) => {
+  // se clicchi su un link/bottone, lascia fare al link
+  if (e.target.closest("a")) return;
+
+  const card = e.target.closest(".card");
+  if (!card) return;
+
+  const zip = card.dataset.zip;
+  if (!zip) return;
+
+  window.open(zip, "_blank", "noopener");
+});
