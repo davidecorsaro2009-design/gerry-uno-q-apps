@@ -105,9 +105,15 @@ a.btn.primary {
   padding: 12px;
 }
 .channel-img{
-  width: 220px; height: 110px; object-fit: cover;
-  border-radius: 14px; border: 1px solid var(--border);
+  width: 220px;
+  height: 110px;
+  object-fit: contain;
+  background: rgba(0,0,0,0.25);
+  padding: 6px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
 }
+
 .channel-info h2{ margin: 0 0 6px; font-size: 18px; }
 .channel-info p{ margin: 0 0 10px; color: var(--muted); }
 .channel-cta{ display:flex; gap:10px; flex-wrap:wrap; }
