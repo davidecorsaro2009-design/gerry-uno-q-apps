@@ -160,29 +160,33 @@ a.btn.primary {
   box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 
-/* Readability overlay sopra la preview */
-.thumb { 
+.thumb {
   position: relative;
 }
 
-.thumb::after{
+/* overlay scuro */
+.thumb::after {
   content:"";
   position:absolute;
   inset:0;
   background: linear-gradient(
-    180deg,
-    rgba(0,0,0,0.15) 0%,
-    rgba(0,0,0,0.35) 45%,
-    rgba(0,0,0,0.65) 100%
+  180deg,
+  rgba(0,0,0,0.05) 0%,
+  rgba(0,0,0,0.30) 35%,
+  rgba(0,0,0,0.85) 100%
   );
   pointer-events:none;
+  z-index: 1;   /* sotto il testo */
 }
 
-/* testo un filo più leggibile */
-.card h3{
-  text-shadow: 0 2px 10px rgba(0,0,0,0.65);
+/* immagine */
+.thumb img {
+  position: relative;
+  z-index: 0;
 }
 
-.meta{
-  text-shadow: 0 1px 8px rgba(0,0,0,0.55);
+/* contenuto sopra overlay */
+.card .content {
+  position: relative;
+  z-index: 2;
 }
