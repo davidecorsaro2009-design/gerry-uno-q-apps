@@ -14,6 +14,7 @@ function render(apps) {
   for (const a of apps) {
     const el = document.createElement("div");
     el.className = "card";
+    el.dataset.zip = a.zip;
 
     const badge = a.badge ? `<div class="badge">${a.badge}</div>` : "";
     const tags = (a.tags || []).map(t => `<span class="tag">${t}</span>`).join("");
