@@ -25,7 +25,7 @@ const APPS = [
     desc: "Strutta dei Frame per creare un'Animazione",
     tags: ["MATRIX","LED","EASY"],
     requires: "UNO Q, Cavo USB-C",
-    zip: "https://raw.githubusercontent.com/gerry-tech/gerry-uno-q-apps/main/apps/display-a-7-segmenti/Display%20a%207%20segmenti.zip",
+    zip: "https://github.com/gerry-tech/gerry-uno-q-apps/raw/refs/heads/main/apps/stickman/MatrixAnimation.zip",
     preview: "apps/stickman/preview.png",
     badge: "NEW"
   }
