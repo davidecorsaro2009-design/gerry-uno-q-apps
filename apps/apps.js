@@ -27,7 +27,8 @@ const APPS = [
     requires: "UNO Q, Cavo USB-C",
     zip: "https://github.com/gerry-tech/gerry-uno-q-apps/raw/refs/heads/main/apps/stickman/MatrixAnimation.zip",
     preview: "apps/stickman/preview.png",
-    badge: "NEW"
+    badge: "FEATURED",
+    new: true
   },
   {
     id: "reaction-time-test",
@@ -37,6 +38,8 @@ const APPS = [
     requires: "UNO Q, Resistori, LED, Fotoresistore",
     zip: "https://github.com/gerry-tech/gerry-uno-q-apps/raw/refs/heads/main/apps/reaction-time-test/ReactionTimeTest.zip",
     preview: "apps/reaction-time-test/preview.png",
-    badge: "NEW"
+    badge: "FEATURED",
+    new: true,
+    demo: "https://www.youtube.com/watch?v=7TkriRXS7Pw&t=109s"
   }
 ];
