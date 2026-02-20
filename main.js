@@ -125,9 +125,9 @@ const I18N = {
 };
 
 const LATEST_VIDEO = {
-  title: "MatrixAnimation",
-  url: "https://www.youtube.com/watch?v=jkG8Zr1GLo0",
-  date: "2026-02-14",
+  title: "WEB Controlled Buzzer",
+  url: "https://www.youtube.com/watch?v=hVKk1X4WMYU",
+  date: "2026-02-20",
   showForDays: 7
 };
 
