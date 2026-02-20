@@ -10,6 +10,7 @@ const APPS = [
     badge: "FEATURED",
     demo: "https://www.youtube.com/watch?v=O9AB-pAx9fA",
     downloads: 928,
+    level: "beginner",
   },
   {
     id: "display-a-7-segmenti",
@@ -21,6 +22,7 @@ const APPS = [
     preview: "apps/display-a-7-segmenti/preview.jpeg",
     badge: "FEATURED",
     downloads: 71,
+    level: "intermediate",
   },
   {
     id: "stickman",
@@ -33,6 +35,7 @@ const APPS = [
     badge: "FEATURED",
     demo: "https://www.youtube.com/watch?v=jkG8Zr1GLo0",
     downloads: 462,
+    level: "beginner"
   },
   {
     id: "reaction-time-test",
@@ -45,6 +48,7 @@ const APPS = [
     badge: "FEATURED",
     demo: "https://www.youtube.com/watch?v=7TkriRXS7Pw",
     downloads: 213,
+    level: "beginner",
   },
   {
     id: "buzzer",
@@ -59,5 +63,7 @@ const APPS = [
     demo: "https://www.youtube.com/watch?v=7TkriRXS7Pw",
     date:"2026/02/20",
     downloads: 57,
+    level: "advanced",
+    demo: "https://www.youtube.com/watch?v=hVKk1X4WMYU",
   }
 ];
