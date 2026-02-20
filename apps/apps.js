@@ -48,7 +48,7 @@ const APPS = [
     desc: "Create a WEB page where you can choose from a few selected melodies.",
     tags: ["WEB","BUZZER","MUSIC"],
     requires: "UNO Q, Cables, Buzzer",
-    zip: "https://github.com/gerry-tech/gerry-uno-q-apps/raw/refs/heads/main/apps/reaction-time-test/ReactionTimeTest.zip",
+    zip: "https://github.com/gerry-tech/gerry-uno-q-apps/raw/refs/heads/main/apps/buzzer/Melodie.zip",
     preview: "apps/reaction-time-test/preview.png",
     badge: "TOP",
     new: true,
