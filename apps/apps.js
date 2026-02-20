@@ -49,7 +49,7 @@ const APPS = [
     tags: ["WEB","BUZZER","MUSIC"],
     requires: "UNO Q, Cables, Buzzer",
     zip: "https://github.com/gerry-tech/gerry-uno-q-apps/raw/refs/heads/main/apps/buzzer/Melodie.zip",
-    preview: "apps/reaction-time-test/preview.png",
+    preview: "apps/buzzer/preview.png",
     badge: "TOP",
     new: true,
     demo: "https://www.youtube.com/watch?v=7TkriRXS7Pw"
